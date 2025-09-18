@@ -1,4 +1,3 @@
-@ -1,44 +0,0 @@
 # AdaDetectGPT
 **This code is for NeurIPS 2025 paper "AdaDetectGPT: Adaptive Detection of LLM-Generated Text with Statistical Guarantees"**, where we borrow or extend some code from [Fast-DetectGPT](https://github.com/baoguangsheng/fast-detect-gpt).
 
