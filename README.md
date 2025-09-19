@@ -17,7 +17,7 @@ Workflow of AdaDetectGPT. Built upon Fast-DetectGPT, our method adaptively learn
 
 
 ## Reproducibility
-**Note**. We share generations from GPT-4o, Gemini-2.5, and Claude-3.5 in exp_gpt3to4/data for convenient reproduction.
+**Note**. We share generations from GPT-3.5-Turbo, GPT-4, GPT-4o, Gemini-2.5, and Claude-3.5 in exp_gpt3to4/data for convenient reproduction. Particularly, GPT-3.5-Turbo and GPT-4 comes from [Fast-DetectGPT](https://github.com/baoguangsheng/fast-detect-gpt).
 
 - `./exp_whitebox.sh` -> white-box experiments (in Table 1) on 5 LLMs: GPT-2 (1.5B), GPT-Neo (2.7B), OPT-2.7B, GPT-J (6B), GPT-NeoX (20B).
 - `./exp_whitebox_advanced.sh` -> white-box experiments on 3 advanced open-sourced LLMs: Qwen-2.5 (7B), Mistralai (7B), Llama3 (8B).
