@@ -45,11 +45,11 @@ python scripts/local_infer_ada.py \
   --train_dataset "train-data-file-name"  ## for multiple training datasets, separate them with `&`
 ```
 
-A quick example with 
+A quick example is: 
 ```bash
 python scripts/local_infer_ada.py \
   --text "Your text to be detected" \
-  --train_dataset "dataset1&dataset2"
+  --train_dataset "./exp_gpt3to4/data/essay_claude-3-5-haiku&./exp_gpt3to4/data/xsum_claude-3-5-haiku"
 ```
 
 ### Without Training Data
