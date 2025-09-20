@@ -1,0 +1,16 @@
+torch
+numpy
+transformers==4.28.1
+datasets==2.12.0
+fsspec==2023.9.2
+matplotlib
+tqdm
+openai
+nltk
+scikit-learn
+rank-bm25
+selenium
+nltk
+textattack
+# google
+# anthropic
