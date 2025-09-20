@@ -89,12 +89,29 @@ We provide generated text samples from GPT-3.5-Turbo, GPT-4, GPT-4o, Gemini-2.5,
 
 ## 🎁 Additional Resources
 
-The `scripts/` directory contains unified implementations of various LLM detection methods from the literature. These implementations provide:
+The `scripts/` directory contains implementations of various LLM detection methods from the literature. These implementations are modified from their official versions or the repo of [FastDetectGPT](https://github.com/baoguangsheng/fast-detect-gpt) to provide:
 - Consistent input/output formats
 - Simplified method comparison
-- Easy integration for future research
 
-We hope these resources facilitate your research in LLM-generated text detection!
+The provided methods are summarized below.
+
+| Method | Script File | Paper/Website |
+|--------|------------|---------------|
+| **AdaDetectGPT** | `detect_gpt_ada.py` | [arXiv:1906.04043](https://arxiv.org/abs/1906.04043) |
+| **Binoculars** | `detect_binoculars.py` | [arXiv:2401.12070](https://arxiv.org/abs/2401.12070) |
+| **BiScope** | `detect_biscope.py` | [NeurIPS 2024](https://neurips.cc/virtual/2024/poster/95814) |
+| **DetectGPT** | `detect_gpt.py` | [arXiv:2301.11305](https://arxiv.org/abs/2301.11305) |
+| **DetectLLM** | `detect_llm.py` | [arXiv:2306.05540](https://arxiv.org/abs/2306.05540) |
+| **DNA-GPT** | `detect_gpt_dna.py` | [arXiv:2305.17359](https://arxiv.org/abs/2305.17359) |
+| **Fast-DetectGPT** | `detect_gpt_fast.py` | [arXiv:2310.05130](https://arxiv.org/abs/2310.05130) |
+| **GLTR** | `detect_gltr.py` | [arXiv:1906.04043](https://arxiv.org/abs/1906.04043) |
+| **ImBD** | `detect_ImBD.py` | [arXiv:2412.10432](https://arxiv.org/abs/2412.10432) |
+| **GPTZero** | `detect_gptzero.py` | [GPTZero.me](https://gptzero.me/) |
+| **RADAR** | `detect_radar.py` | [arXiv:2307.03838](https://arxiv.org/abs/2307.03838) |
+| **RoBERTa OpenAI Detector** | `detect_roberta.py` | [arXiv:1908.09203](https://arxiv.org/abs/1908.09203) |
+| **Text Fluoroscopy** | `detect_fluoroscopy.py` | [EMNLP 2024](https://aclanthology.org/2024.emnlp-main.885/) |
+
+We hope these resources facilitate your research and applications in LLM-generated text detection!
 
 ## 📖 Citation
 
