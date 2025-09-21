@@ -13,7 +13,7 @@ from nuisance_func import BSplineTwoSample
 from nuisance_func_human import BSplineTheory
 from utils import load_training_data, separated_string
 import json
-from stat_detect_gpt import get_classification_stat
+from detect_gpt_ada import get_classification_stat
 
 def load_model_and_tokenizer(args):
     DEVICE = 'cuda'
@@ -45,25 +45,25 @@ def run(args, scoring_tokenizer, scoring_model, sampling_tokenizer, sampling_mod
         bspline_args = args.config
         ## load training data
         print(f"Datasets for learning BSpline: {args.train_dataset}")
-        
+
         if args.w_func == 'pretrained':
             w_func = BSplineTwoSample(bspline_args)
-            w_func.beta_hat = torch.tensor([-0.0276, -0.0303, -0.0328, -0.0351, -0.0372, -0.0391, -0.0408]).to(DEVICE)
+            w_func.beta_hat = torch.tensor([0.0, -0.011333, -0.037667, -0.056667, -0.281667, -0.592, 0.157833, 0.727333,]).to(DEVICE)
         else:
             if args.w_func == 'bspline':
                 w_func = BSplineTwoSample(bspline_args)
             elif args.w_func == 'bspline_theory':
                 w_func = BSplineTheory(bspline_args, machine_text=False)
-            
+
             train_data = load_training_data(args.train_dataset)
             w_func.fit(train_data, scoring_tokenizer, scoring_model, args)
         beta = w_func.beta_hat.detach().cpu().tolist()
-    
+
     shift_value = torch.zeros(1).to(DEVICE)
     random.seed(SEED)
     torch.manual_seed(SEED)
     np.random.seed(SEED)
-    
+
     text = args.text
     tokenized = scoring_tokenizer(text, return_tensors="pt", padding=True, return_token_type_ids=False).to(DEVICE)
     labels = tokenized.input_ids[:, 1:]
@@ -80,7 +80,7 @@ def run(args, scoring_tokenizer, scoring_model, sampling_tokenizer, sampling_mod
             assert torch.all(tokenized.input_ids[:, 1:] == labels), "Tokenizer is mismatch."
             logits_ref = sampling_model(**tokenized).logits[:, :-1]
         original_crit = criterion_fn(logits_ref, logits_score, labels, burn_in_num, w_func, shift_value)
-    
+
     results = {
         "text": text,
         "crit": original_crit, 

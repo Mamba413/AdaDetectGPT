@@ -54,7 +54,7 @@ python scripts/local_infer_ada.py \
 
 ### Without Training Data
 
-AdaDetectGPT can also operate using pretrained parameters (trained on outputs from GPT-4o, Gemini-2.5, and Claude-3.5):
+AdaDetectGPT can also use pretrained parameters (trained on texts from GPT-4o, Gemini-2.5, and Claude-3.5):
 
 ```bash
 python scripts/local_infer_ada.py --text "Your text to be detected"
@@ -128,4 +128,4 @@ If you find this work useful, please consider citing our paper:
 
 ## 📧 Contact
 
-For questions or feedback, please open an issue in this repository.
+For any questions/suggestions/bugs, feel free to open an [issue](https://github.com/Mamba413/AdaDetectGPT/issues) in the repository.
