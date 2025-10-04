@@ -97,7 +97,7 @@ The provided methods are summarized below.
 
 | Method | Script File | Paper/Website |
 |--------|------------|---------------|
-| **AdaDetectGPT** | `detect_gpt_ada.py` | [arXiv:1906.04043](https://arxiv.org/abs/1906.04043) |
+| **AdaDetectGPT** | `detect_gpt_ada.py` | [arXiv:2510.01268](https://arxiv.org/abs/2510.01268) |
 | **Binoculars** | `detect_binoculars.py` | [arXiv:2401.12070](https://arxiv.org/abs/2401.12070) |
 | **BiScope** | `detect_biscope.py` | [NeurIPS 2024](https://neurips.cc/virtual/2024/poster/95814) |
 | **DetectGPT** | `detect_gpt.py` | [arXiv:2301.11305](https://arxiv.org/abs/2301.11305) |
