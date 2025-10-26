@@ -69,23 +69,22 @@ We provide generated text samples from GPT-3.5-Turbo, GPT-4, GPT-4o, Gemini-2.5,
 #### White-box Experiments
 - `./exp_whitebox.sh` - Table 1: Evaluation on 5 base LLMs
   - GPT-2 (1.5B), GPT-Neo (2.7B), OPT-2.7B, GPT-J (6B), GPT-NeoX (20B)
-- `./exp_whitebox_advanced.sh` - Advanced open-source LLMs
+- `./exp_whitebox_advanced.sh` - Table S7: Advanced open-source LLMs
   - Qwen-2.5 (7B), Mistral (7B), Llama3 (8B)
 
 #### Black-box Experiments
-- `./exp_blackbox.sh` - Table 2: GPT-4 and GPT-3.5-Turbo evaluation
-- `./exp_blackbox_advanced.sh` - Advanced closed-source LLMs
+- `./exp_blackbox_advanced.sh` - Table 2 and Table S8: Advanced closed-source LLMs
   - Gemini-2.5-Flash, GPT-4o, Claude-3.5-Haiku
 - `./exp_blackbox_simple.sh` - Table S2: Five open-source LLMs
 
 #### Analysis Experiments
-- `./exp_sample.sh` - Training data size effects (Figure S2)
-- `./exp_tuning.sh` - Hyperparameter robustness (Figure S3)
-- `./exp_dist_shift.sh` - Distribution shift analysis (Figure S4)
-- `./exp_attack.sh` - Adversarial attack evaluation
-- `./exp_compute.sh` - Computational cost analysis
-- `./exp_variance.sh` - Equal variance condition verification
-- `./exp_normal.sh` - Data for Figure 3 and Figure S1
+- `./exp_attack.sh` - Table 3: Adversarial attack evaluation
+- `./exp_normal.sh` - Data for Figure 3 and Figure S8
+- `./exp_sample.sh` - Training data size effects (Figure S5)
+- `./exp_tuning.sh` - Hyperparameter robustness (Figure S6)
+- `./exp_dist_shift.sh` - Distribution shift analysis (Figure S7)
+- `./exp_compute.sh` - Computational cost analysis (Table S9 and S10)
+- `./exp_variance.sh` - Equal variance condition verification (Table S5)
 
 ## 🎁 Additional Resources
 
