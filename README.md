@@ -3,7 +3,7 @@
 [![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-blue)](https://neurips.cc/)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-green)](https://www.python.org/)
 
-This repository contains the implementation of [**Adaptive Detection of LLM-Generated Text with Statistical Guarantees**](https://arxiv.org/abs/2510.01268), presented at NeurIPS 2025. Our method provides adaptive detection of LLM-generated text with statistical guarantees. We build upon and extend code from [Fast-DetectGPT](https://github.com/baoguangsheng/fast-detect-gpt).
+This repository contains the implementation of [**AdaDetectGPT: Adaptive Detection of LLM-Generated Text with Statistical Guarantees**](https://arxiv.org/abs/2510.01268), presented at NeurIPS 2025. Our method provides adaptive detection of LLM-generated text with statistical guarantees. We build upon and extend code from [Fast-DetectGPT](https://github.com/baoguangsheng/fast-detect-gpt).
 
 ## 📋 Overview
 
